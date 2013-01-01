@@ -1,0 +1,29 @@
+#!/usr/bin/env node
+
+'use strict';
+
+var Metamorph = require('../').Metamorph;
+var fs        = require('fs');
+var path      = require('path');
+
+function help() {
+  console.log('Usage: metamorph inputfile format [outputfile]');
+  console.log();
+  console.log('Example: metamorph component.json jam');
+  console.log('         To generate a jam compatible package.json');
+  console.log('         from a component.json meta file.');
+  console.log();
+  console.log('More info available here: https://github.com/shama/metamorph');
+  process.exit();
+}
+
+var args = Array.prototype.slice.call(process.argv, 2);
+if (args.length < 2) help();
+
+if (typeof args[2] !== 'string') {
+  args[2] = args[1] === 'component' ? 'component.json' : 'package.json';
+}
+
+var m = new Metamorph(args[1]);
+m.on('end', function() { console.log('Written to ' + args[2] + '.'); });
+fs.createReadStream(args[0]).pipe(m).pipe(fs.createWriteStream(args[2]));

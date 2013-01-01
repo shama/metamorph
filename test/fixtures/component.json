@@ -1,0 +1,11 @@
+{
+  "name": "test",
+  "repo": "shama/test",
+  "version": "0.1.0",
+  "main": "lib/test.js",
+  "scripts": ["lib/test.js"],
+  "styles": [],
+  "dependencies": {
+    "jquery": "1.7.x"
+  }
+}

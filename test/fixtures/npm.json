@@ -1,0 +1,12 @@
+{
+  "name": "test",
+  "version": "0.1.0",
+  "main": "lib/test.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shama/test.git"
+  },
+  "dependencies": {
+    "jquery": "1.7.x"
+  }
+}

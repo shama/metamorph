@@ -1,0 +1,42 @@
+{
+  "name": "metamorph",
+  "description": "Morphs package meta files into each other.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/shama/metamorph",
+  "author": {
+    "name": "Kyle Robinson Young",
+    "email": "kyle@dontkry.com",
+    "url": "http://dontkry.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shama/metamorph.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shama/metamorph/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/shama/metamorph/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "index",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit -v"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.0rc4",
+    "grunt-contrib-watch": "~0.2.0",
+    "grunt-contrib-nodeunit": "~0.1.0",
+    "grunt-contrib-jshint": "~0.1.0",
+    "async": "~0.1.22"
+  },
+  "keywords": [
+    "meta", "package", "npm", "jam", "component"
+  ]
+}
