@@ -21,6 +21,9 @@
       "url": "https://github.com/shama/metamorph/blob/master/LICENSE-MIT"
     }
   ],
+  "bin": {
+    "metamorph": "bin/metamorph"
+  },
   "main": "index",
   "engines": {
     "node": ">= 0.8.0"
