@@ -4,7 +4,6 @@
 
 var Metamorph = require('../').Metamorph;
 var fs        = require('fs');
-var path      = require('path');
 
 function help() {
   console.log('Usage: metamorph inputfile format [outputfile]');
